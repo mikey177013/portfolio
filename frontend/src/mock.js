@@ -11,13 +11,13 @@ export const personalInfo = {
   ],
   avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Mikey&style=circle",
   bio: "Hey, I'm Mikey — a developer who believes code should be art, not just function. I live in the intersection of creativity and technology, building things that make people go 'whoa'. When I'm not crafting digital experiences, you'll find me exploring new frameworks, diving into anime, or architecting chaos in the best way possible.",
-  email: "mikey@chaos.dev",
-  location: "Digital Realm",
+  email: "phoenix177013@gmail.com",
+  location: "mars",
   socials: {
     github: "https://github.com/mikey177013",
-    twitter: "https://twitter.com/mikey177013",
-    linkedin: "https://linkedin.com/in/mikey177013",
-    discord: "Mikey#177013"
+    twitter: "https://github.com/mikey177013",
+    linkedin: "https://github.com/mikey177013",
+    discord: "I dont use"
   }
 };
 
@@ -36,31 +36,30 @@ export const skills = [
 
 export const experiences = [
   {
-    year: "2024",
-    title: "Full Stack Architect",
-    company: "Chaos Labs",
-    description: "Building scalable web applications with modern tech stacks. Led a team of 5 developers.",
+    year: "2025",
+    title: "A simple vibe coder",
+    company: "whatsapp bot",
+    description: "My life was nothing but suffering. ",
     icon: "💻"
   },
   {
-    year: "2023",
-    title: "Frontend Lead",
-    company: "Digital Dreams Inc",
-    description: "Crafted stunning UI/UX experiences with React and Next.js. Improved performance by 60%.",
+    year: "2024",
+    title: "student",
+    company: "just enjoyed my 11th",
     icon: "🎨"
   },
   {
     year: "2022",
-    title: "Software Developer",
-    company: "TechStart",
-    description: "Developed multiple client projects. Specialized in React, Node.js, and MongoDB.",
+    title: "STUDENT",
+    company: "10TH",
+    description: "Studied a lot",
     icon: "⚡"
   },
   {
     year: "2021",
-    title: "Computer Science Degree",
-    company: "Tech University",
-    description: "Graduated with honors. Focused on algorithms, data structures, and web development.",
+    title: "I forgot",
+    company: "student",
+    description: "i forgot",
     icon: "🎓"
   }
 ];
