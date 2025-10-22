@@ -67,11 +67,11 @@ export const experiences = [
 export const projects = [
   {
     id: 1,
-    title: "Neon Chat",
-    description: "Real-time chat application with cyberpunk UI. Features end-to-end encryption and custom themes.",
+    title: "CUTIEFY",
+    description: "A WEBSITE WHERE YOU CAN LISTEN SONGS",
     image: "https://images.unsplash.com/photo-1595623654300-b27329804025?w=800",
     tags: ["React", "Socket.io", "Node.js"],
-    liveUrl: "#",
+    liveUrl: "https://cutiefy.vercel.app/",
     githubUrl: "#",
     featured: true
   },
