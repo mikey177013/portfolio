@@ -1,34 +1,181 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    background-color: #0a0a0f;
+    color: #ffffff;
+    cursor: none;
+    overflow-x: hidden;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a0a0f;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #00ffff, #b537ff);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #00d9ff, #8b2cff);
+}
+
+/* Glitch animations */
+@keyframes glitch-1 {
+    0%, 100% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        transform: translate(-2px, -2px);
+    }
+    60% {
+        transform: translate(2px, 2px);
+    }
+    80% {
+        transform: translate(2px, -2px);
     }
 }
 
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+@keyframes glitch-2 {
+    0%, 100% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(2px, -2px);
+    }
+    40% {
+        transform: translate(2px, 2px);
+    }
+    60% {
+        transform: translate(-2px, -2px);
+    }
+    80% {
+        transform: translate(-2px, 2px);
+    }
 }
 
-.App-link {
-    color: #61dafb;
+.animate-glitch-1 {
+    animation: glitch-1 0.3s infinite;
 }
 
-@keyframes App-logo-spin {
-    from {
+.animate-glitch-2 {
+    animation: glitch-2 0.3s infinite reverse;
+}
+
+/* Shimmer effect for progress bars */
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.animate-shimmer {
+    animation: shimmer 2s infinite;
+}
+
+/* Chaos mode Easter egg */
+body.chaos-mode {
+    animation: chaosShake 0.3s infinite;
+}
+
+@keyframes chaosShake {
+    0%, 100% {
         transform: rotate(0deg);
     }
-    to {
-        transform: rotate(360deg);
+    25% {
+        transform: rotate(2deg);
     }
+    75% {
+        transform: rotate(-2deg);
+    }
+}
+
+/* Neon glow effect */
+.neon-glow {
+    text-shadow: 
+        0 0 5px #00ffff,
+        0 0 10px #00ffff,
+        0 0 20px #00ffff,
+        0 0 40px #00ffff,
+        0 0 80px #00ffff;
+}
+
+/* Hide default cursor for custom cursor */
+a, button, input, textarea {
+    cursor: none !important;
+}
+
+/* Gradient text animations */
+@keyframes gradient-shift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.gradient-animate {
+    background-size: 200% 200%;
+    animation: gradient-shift 3s ease infinite;
+}
+
+/* Page transition */
+.page-transition {
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Prevent text selection on interactive elements */
+button, a {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+/* Focus styles for accessibility */
+button:focus-visible, a:focus-visible {
+    outline: 2px solid #00ffff;
+    outline-offset: 2px;
+}
+
+/* Loading animation */
+@keyframes pulse-glow {
+    0%, 100% {
+        opacity: 1;
+        box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    }
+    50% {
+        opacity: 0.5;
+        box-shadow: 0 0 40px rgba(0, 255, 255, 0.8);
+    }
+}
+
+.pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
 }
