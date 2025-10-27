@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "name": "portfolio-frontend",
   "builds": [
     {
       "src": "package.json",
@@ -16,7 +15,11 @@
       "dest": "/index.html"
     }
   ],
-  "env": {
-    "REACT_APP_BACKEND_URL": "@react_app_backend_url"
+  "build": {
+    "env": {
+      "REACT_APP_BACKEND_URL": "https://portfolio-backend-9ttg.onrender.com",
+      "REACT_APP_ENABLE_VISUAL_EDITS": "false",
+      "ENABLE_HEALTH_CHECK": "false"
+    }
   }
 }
